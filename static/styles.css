@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #F1F3E0;
+    margin: 0;
+}
+
+nav {
+    background: #778873;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #F1F3E0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #A1BC98;
+    text-decoration: underline;
+}
+
+h1 {
+    color: #778873;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h2 {
+    color: #778873;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    background: #A1BC98;
+    color: #F1F3E0;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    padding: 40px;
+}
+
+.home-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-text {
+  flex: 1;
+}
+
+.front-img {
+  width: 60%;
+  height: auto;
+  border-radius: 10px;
+  border: solid 2px #778873;
+}
+
+.text-image {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.text-image .text {
+    width: 40%;
+}
+
+.text-image img {
+    width: 60%;
+    height: auto;
+}
+
+.stat-img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: solid 2px #778873;
+}
+
+.def-img {
+    display: block;
+    object-fit: cover;
+    margin: 20px auto;
+    max-width: 600px;
+    max-height: 300px;
+    border-radius: 10px;
+    border: solid 2px #778873;
+}
+
+.plant-section {
+    position: relative;
+    min-height: 300px;
+}
+
+.plant-content {
+    flex: 1;
+}
+
+.plant-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.plant-controls form {
+    margin: 0;
+}
+
+.forest {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 60%;
+    height: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+
+    padding: 10px;
+}
+
+.tree {
+    width: 55px;
+    height: auto;
+    object-fit: scale-down;
+}
+
+.plant-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.plant-header h1 {
+    margin: 0;
+}
