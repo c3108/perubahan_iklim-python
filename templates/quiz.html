@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/styles.css">
+  <title>Quiz Deforestasi</title>
+</head>
+
+<body>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/deforestasi">Informasi</a>
+    <a href="/mulai-menanam">Ayo Menanam!</a>
+    <a href="/quiz">Quiz</a>
+</nav>
+
+<div class="container">
+  <h1>Quiz!</h1>
+
+  <form method="post" class="quiz-questions">
+    <p>Setelah belajar lebih dalam tentang deforestasi, uji pengetahuanmu dengan quiz ini!</p>
+    <p>1. Apa dampak utama dari deforestasi?</p>
+    <label><input type="radio" name="q1" value="a" required> Meningkatkan kualitas udara</label><br>
+    <label><input type="radio" name="q1" value="b"> Menyebabkan banjir dan pemanasan global</label><br>
+    <label><input type="radio" name="q1" value="c"> Menambah jumlah hutan</label>
+
+    <br><br>
+
+    <p>2. Mengapa hutan penting bagi kehidupan?</p>
+    <label><input type="radio" name="q2" value="a" required> Menyerap karbon dan menghasilkan oksigen</label><br>
+    <label><input type="radio" name="q2" value="b"> Menghambat pertumbuhan tanaman</label><br>
+    <label><input type="radio" name="q2" value="c"> Menyebabkan pemanasan global</label>
+
+    <br><br>
+
+    <p>3. Salah satu cara mengurangi dampak deforestasi adalah?</p>
+    <label><input type="radio" name="q3" value="a" required> Menebang pohon secara liar</label><br>
+    <label><input type="radio" name="q3" value="b"> Membakar hutan</label><br>
+    <label><input type="radio" name="q3" value="c"> Menanam kembali pohon</label>
+
+    <br><br>
+
+    <p>4. Pohon membantu mencegah banjir dengan cara?</p>
+    <label><input type="radio" name="q4" value="a" required> Menyerap air melalui akar</label><br>
+    <label><input type="radio" name="q4" value="b"> Mengeringkan tanah</label><br>
+    <label><input type="radio" name="q4" value="c"> Memantulkan air hujan</label>
+
+    <br><br>
+
+    <p>5. Apa peran hutan bagi hewan?</p>
+    <label><input type="radio" name="q5" value="a" required> Tempat tinggal dan mencari makan</label><br>
+    <label><input type="radio" name="q5" value="b"> Tempat pembangunan kota</label><br>
+    <label><input type="radio" name="q5" value="c"> Sumber polusi</label>
+
+    <br><br>
+
+    <p>6. Menanam pohon termasuk tindakan?</p>
+    <label><input type="radio" name="q6" value="a" required> Eksploitasi alam</label><br>
+    <label><input type="radio" name="q6" value="b"> Konservasi lingkungan</label><br>
+    <label><input type="radio" name="q6" value="c"> Perusakan hutan</label>
+
+    <br><br>
+
+    <button class="submit-btn">Kirim Jawaban</button>
+  </form>
+
+  {% if score is not none %}
+    <h2>Skor kamu: {{ score }} / 6</h2>
+  {% endif %}
+</div>
+
+</body>
+</html>
